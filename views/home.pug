@@ -1,0 +1,52 @@
+extends layout.pug
+
+block content 
+    h1(class="h1 mb-3 font-weight-normal")  Énoncé 
+    div
+        if user 
+            h2(class="h1 mb-3 font-weight-normal") Bienvenue 
+                span= user.username
+    br
+    div 
+        h3 Question 1 (pratique) #[i 30% ]: 
+        h5 (Ne pas oublier #[b npm install] pour débuter)
+        div
+            h4 Partie 1 :
+            div 
+                p Complétez la navigation en complétant le fichier #[b index.js] sous le dossier #[b routes].
+                //- c'est fait.
+        div
+            h4 Partie 2 :
+            div 
+                p En vous basant sur les informations de la connexion dans le fichier de connexion de la database, créez une collection et un user correspendants.
+                
+        div
+            h4 Partie 3 :
+            div 
+                p Complétez les fonctions #[b afficherInscription] et #[b afficherInscription] dans le fichier #[b use.controller.js], sous le dossier #[b controllers].
+                 //-C'est fait
+    br         
+    div
+        h3 Question 2 (théorique) #[i 20% ]: 
+        div
+            h4 Partie 1 :
+            div 
+                p À quoi sert le fichier #[b layout.pug] ?
+                p Réponse : ICI (dans #[b home.pug])
+               t aussi la template top-bar qui se répète dans toutes les pages, qui affiche le header de l'application
+        div
+            h4 Partie 2 :
+            div 
+                p Donnez la requête MongoDB qui permet de tranformer le type d'un attribu de #[b Int] à #[b Bool].
+                p Expliquez : ICI (dans #[b home.pug])
+                /
+    br
+    div
+        h3 Question 3 (Bugs) #[i 50% ]: 
+        div
+            h4 Il y a 5 bugs dans l'application. Trouvez et fixez les.
+            //-C'est fait
+    div
+        div(style="padding-top: 25px !important") 
+            h3 (*)Remettez votre code, sous forme de fichier compréssé. Tout fichier inutile vous coute 5% de la note finale.
+                        
